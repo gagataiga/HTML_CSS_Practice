@@ -1,3 +1,59 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
 h1 {
-  color: blue;
+  font-size: 26px;
+  /* ABCDEFG */
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  /* テキストの位置
+  左 真ん中 右 */
+  text-align: center;
+}
+
+li {
+  font-size: 22px;
+}
+
+p {
+  font-size: 22px;
+  /* line-height 行間 */
+  line-height: 1.5;
+}
+
+/* 変更かけたい場所が入れ子の場合 
+親要素 子要素 のように記載
+入れこのように指定することで色々変更
+*/
+
+/* article header p {
+  font-style: italic;
+} */
+
+/* 親要素 子要素を使う */
+footer p {
+  font-size: 16px;
+}
+
+#authour {
+  font-style: italic;
 }
