@@ -1,11 +1,13 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+body {
   font-family: sans-serif;
   color: #444;
+  border-top: 10px solid #1098ad;
+}
+h1,
+h2,
+h3 {
+  /* font-family: sans-serif;
+  color: #444; */
 }
 
 /* textの色をかえるには 
@@ -133,18 +135,56 @@ article p:first-child {
 }
 
 /* Styling links  */
-
 a:link {
   color: #1098ad;
   text-decoration: none;
 }
 
+/* one time you push the link 
+this css down below can work */
 a:visited {
   color: #1098ad;
 }
 
+/* if you cursor this css down below can work*/
 a:hover {
   font-weight: bold;
   color: orange;
-  text-decoration: underline dotted orange;
+  text-decoration: underline orange;
+}
+
+/* youn are clicking the link (I mean hold down) 
+then this css down below can work
+*/
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* 
+Resolving confilicts
+#copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+}
+
+a {
+  color: red;
+} */
+/* 
+nav a:link,
+p {
+  font-size: 18px;
+} */
+
+nav {
+  font-size: 18px;
 }
