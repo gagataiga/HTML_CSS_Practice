@@ -1,8 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: sans-serif;
   color: #444;
   border-top: 10px solid #1098ad;
 }
+
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7f7;
+  /* padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  /* border 5px solid=透明 */
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding: 50px 0;
+  width: 500px;
+}
+
 h1,
 h2,
 h3 {
@@ -28,10 +72,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -50,6 +97,13 @@ p {
   font-size: 22px;
   /* line-height 行間 */
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 /* 変更かけたい場所が入れ子の場合 
@@ -91,17 +145,6 @@ p {
   list-style: none;
 }
 
-.main-header {
-  background-color: #f7f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  /* border 5px solid=透明 */
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-}
-
 body {
   /* background-color: rgb(243, 239, 239); */
 }
@@ -117,12 +160,20 @@ body {
   「selector : アクション要素」で書く
   for example :hover :first 
 */
+
+li {
+  margin-bottom: 10px;
+}
+
 li:first-child {
   font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 li:last-child {
   font-style: italic;
+  margin-bottom: 0;
 }
 
 li:nth-child(odd) {
@@ -160,6 +211,15 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
+.post-img {
+  /* auto means the img size 
+  100 % 50% is not same meaning
+  */
+  width: 100%;
+  height: auto;
+}
+
 /* 
 Resolving confilicts
 #copyright {
@@ -184,7 +244,3 @@ nav a:link,
 p {
   font-size: 18px;
 } */
-
-nav {
-  font-size: 18px;
-}
