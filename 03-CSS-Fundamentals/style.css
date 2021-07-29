@@ -6,6 +6,7 @@ body {
   font-family: sans-serif;
   color: #444;
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 .container {
@@ -13,6 +14,7 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+  position: relative;
 }
 
 .main-header {
@@ -22,11 +24,20 @@ body {
   padding-right: 20px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 nav {
   font-size: 18px;
+  text-align: center;
 }
+
+/* nav a:link {
+  background-color: red;
+  margin: 20px;
+  padding: 30px;
+
+  display: block;
+} */
 
 article {
   margin-bottom: 60px;
@@ -34,6 +45,7 @@ article {
 
 .post-header {
   margin-bottom: 40px;
+  position: relative;
 }
 
 aside {
@@ -91,6 +103,7 @@ h4 {
 
 li {
   font-size: 22px;
+  display: inline;
 }
 
 p {
@@ -244,3 +257,46 @@ nav a:link,
 p {
   font-size: 18px;
 } */
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-letter {
+  font-size: 80px;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::before {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
+}

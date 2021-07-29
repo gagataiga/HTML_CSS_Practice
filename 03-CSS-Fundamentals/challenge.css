@@ -3,11 +3,29 @@
   padding: 0;
 }
 
-body {
+.main {
   border: 5px solid black;
   font-family: sans-serif;
   width: 825px;
   margin: 50px auto;
+  position: relative;
+}
+
+.main::before {
+  content: "SALE";
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  padding: 10px 20px;
+  position: absolute;
+  display: inline-block;
+  left: -40px;
+  top: -20px;
+  letter-spacing: 1px;
+}
+
+.main::before:hover {
 }
 
 #title {
@@ -83,4 +101,37 @@ body {
   background-color: pink;
   color: #fff;
   font-size: 30px;
-} */ ;
+} */
+
+.color-list {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.color-list div {
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.black {
+  background-color: black;
+}
