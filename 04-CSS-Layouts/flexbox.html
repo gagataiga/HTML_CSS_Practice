@@ -35,11 +35,49 @@
       .container {
         /* STARTER */
         font-family: sans-serif;
-        background-color: #ddd;
-        font-size: 40px;
+        background-color: rgb(109, 106, 106);
+        font-size: 30px;
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        /* 一番上 */
+        /* align-items: flex-start;
+        /* 一番下 */
+        /* align-items: flex-end; */
+        /* 真ん中
+        align-items: center;
+        /* all items are as tall as the tallest element. */
+        align-items: center;
+        /* elements are centered inside containser */
+        justify-content: flex-start;
+        /* each those elements have spaces */
+        /* justify-content: space-between; */
+        gap: 30px;
+      }
+
+      .el {
+        /* DEFAULTS
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+      }
+
+      .el--1 {
+        align-self: flex-start;
+      }
+
+      /* .el--4 {
+        align-self: stretch;
+      } */
+
+      .el--5 {
+        align-self: stretch;
+        order: 1;
+      }
+
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
